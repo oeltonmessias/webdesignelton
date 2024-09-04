@@ -1,35 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Dados Pessoais</title>
+    <title>Tarefa 2 B</title>
 </head>
 <body>
-    <h2>Formulário Dados Pessoais:</h2>
-    <form action="#" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+    <h1>Formulário W3School</h1>
+    <form action="https://www.w3schools.com/action_page.php" method="POST">
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data"><br><br>
 
-        <label for="endereco">Endereço:</label><br>
-        <input type="text" id="endereco" name="endereco" required><br><br>
+        <h3>Dados de Acesso</h3>
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario"><br><br>
 
-        <label for="complemento">Complemento:</label><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <h3>Dados Pessoais</h3>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br><br>
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero"><br><br>
+
+        <label for="complemento">Complemento:</label>
         <input type="text" id="complemento" name="complemento"><br><br>
 
-        <label for="cidade">Cidade:</label><br>
-        <input type="text" id="cidade" name="cidade" required><br><br>
+        <label for="cidade">Cidade:</label>
+        <input list="cidades" id="cidade" name="cidade">
+        <datalist id="cidades">
+            <option value="Sorocaba">
+            <option value="Itu">
+            <option value="São Roque">
+            <option value="Tatui">
+        </datalist><br><br>
 
-        <label for="estado">Estado:</label><br>
-        <input type="text" id="estado" name="estado" required><br><br>
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PR">Paraná</option>
+        </select><br><br>
 
-        <label for="genero">Gênero:</label><br>
-        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep"><br><br>
+
+        <h3>Gênero</h3>
+        <input type="radio" id="masculino" name="genero" value="masculino">
         <label for="masculino">Masculino</label><br>
-        <input type="radio" id="feminino" name="genero" value="feminino" required>
-        <label for="feminino">Feminino</label><br><br>
+
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" id="nao-dizer" name="genero" value="nao-dizer">
+        <label for="nao-dizer">Prefiro não falar</label><br><br>
+
+        <h3>Curso</h3>
+        <input type="checkbox" id="ads" name="curso" value="ads">
+        <label for="ads">ADS</label><br>
+
+        <input type="checkbox" id="jogos" name="curso" value="jogos">
+        <label for="jogos">Jogos</label><br>
+
+        <input type="checkbox" id="gestao-ti" name="curso" value="gestao-ti">
+        <label for="gestao-ti">Gestão de TI</label><br>
+
+        <input type="checkbox" id="banco-dados" name="curso" value="banco-dados">
+        <label for="banco-dados">Banco de Dados</label><br><br>
+
+        <h3>Modelo</h3>
+        <input type="radio" id="presencial" name="modelo" value="presencial">
+        <label for="presencial">Presencial</label><br>
+
+        <input type="radio" id="ead" name="modelo" value="ead">
+        <label for="ead">EAD</label><br>
+
+        <input type="radio" id="semi-presencial" name="modelo" value="semi-presencial">
+        <label for="semi-presencial">Semi Presencial</label><br><br>
 
         <input type="submit" value="Enviar">
     </form>
+
 </body>
 </html>
