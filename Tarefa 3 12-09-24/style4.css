@@ -1,0 +1,54 @@
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Nunito", sans-serif;
+}
+h1 {
+    margin-bottom: 20px;
+    color: rgb(12, 8, 149);
+    
+}
+
+/* Seletores de tag */
+p {
+    color: rgb(10, 1, 1);
+    font-size: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+ 
+  .paddingEsq {
+    padding-left: 10px;
+  }
+
+nav {
+    background-color: #000000;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+}
+
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #de2e2e;
+}
