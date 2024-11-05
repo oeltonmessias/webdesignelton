@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.botao-verde {
+    background-color: #6fb66f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.botao-branco {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#imagem {
+    display: block;
+    margin: 20px 0;
+}
+
+.botoes {
+    margin: 10px 0;
+}
+
+.botoes-alterar {
+    margin-top: 20px;
+}
+
+.muda-cor {
+    background-color: #f00 !important;
+    color: white !important;
+}
