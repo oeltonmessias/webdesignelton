@@ -1,6 +1,14 @@
+document.getElementById('cadastrarBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Previne o comportamento padrão do botão para evitar recarregar a página
+    adicionarCard();
+});
+
 function adicionarCard() {
     const titulo = document.getElementById('titulo').value;
-    if (titulo.trim() === "") return;
+    if (titulo.trim() === "") {
+        alert("Por favor, insira um título para o card.");
+        return;
+    }
 
     const cardContainer = document.getElementById('cardContainer').firstElementChild;
 
@@ -18,7 +26,7 @@ function adicionarCard() {
     `;
 
     cardContainer.appendChild(card);
-    document.getElementById('titulo').value = "";
+    document.getElementById('titulo').value = ""; // Limpa o campo de entrada após adicionar o card
 }
 
 function apagarCard(button) {
