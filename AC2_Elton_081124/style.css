@@ -1,15 +1,3 @@
-.um {
-    display: flex;
-    justify-content: center;
-}
-
-.dois {
-    border: 1px grey;
-    border-radius: 20px;
-    padding: 20px;
-    width: 500px;
-}
-
-#container img {
-    height: 150px;
+body {
+    font-family: Arial, sans-serif;
 }

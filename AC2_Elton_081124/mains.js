@@ -1,29 +1,32 @@
-function cad() {
-    const titulo = document.getElementById('title').value;
-    const col = document.createElement('div');
-    col.classList.add('col-md-3', 'mb-3');
-    const randomNum = Math.floor(Math.random() * 1000);
+function adicionarCard() {
+    const titulo = document.getElementById('titulo').value;
+    if (titulo.trim() === "") return;
 
-    col.innerHTML = `
+    const cardContainer = document.getElementById('cardContainer').firstElementChild;
+
+    const card = document.createElement('div');
+    card.className = 'col-md-3 mb-4';
+
+    card.innerHTML = `
         <div class="card">
-            <img src="https://picsum.photos/400/200?random=${randomNum}" class="card-img-top" alt="">
-            <div class="card-body d-flex align-items-center flex-column">
+            <img src="https://picsum.photos/150" class="card-img-top" alt="Imagem do Card">
+            <div class="card-body">
                 <h5 class="card-title">${titulo}</h5>
-                <button class="btn btn-danger" onclick="removerCard(this)">Remover</button>
+                <button class="btn btn-danger" onclick="apagarCard(this)">Apagar</button>
             </div>
-        </div>  
+        </div>
     `;
 
-    const container = document.getElementById('container');
-    container.appendChild(col);
-    document.getElementById('título').value = "";
+    cardContainer.appendChild(card);
+    document.getElementById('titulo').value = "";
 }
 
-function removerCard(botao) {
-    botao.closest('.col-md-3').remove();
+function apagarCard(button) {
+    const card = button.closest('.col-md-3');
+    card.remove();
 }
 
-function Delete() {
-    const container = document.getElementById('container');
-    container.innerHTML = "";
+function apagarTodos() {
+    const cardContainer = document.getElementById('cardContainer').firstElementChild;
+    cardContainer.innerHTML = "";
 }
